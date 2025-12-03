@@ -1,0 +1,61 @@
+test_id,system,query,response,ground_truth,timestamp
+TEST_000,langgraph_agent,Where is my order ORD001?,"APPROVED
+
+The response provided a useful and accurate answer to the user's tool request. It successfully fetched the status of an order with ID ORD001 and provided additional information about the customer associated with that order. This meets the user's needs effectively.
+
+If there are any further requests or details required, they can be handled in subsequent tools.",ORD001: Laptop Stand ($50.00) is currently shipped.,2025-12-03T21:48:36.347630
+TEST_001,langgraph_agent,Can you check the status of order ORD002?,REJECTED,ORD002: Wireless Mouse ($120.00) is currently processing.,2025-12-03T21:48:47.861510
+TEST_002,langgraph_agent,Has my order ORD003 shipped yet?,REJECTED,ORD003: USB Cable ($30.00) is currently delivered.,2025-12-03T21:49:03.152054
+TEST_003,langgraph_agent,When will order ORD004 arrive?,APPROVED,ORD004: Monitor ($75.00) is currently cancelled.,2025-12-03T21:49:11.864363
+TEST_004,langgraph_agent,Is order ORD005 still processing?,REJECTED,ORD005: Keyboard ($200.00) is currently processing.,2025-12-03T21:49:26.877725
+TEST_005,langgraph_agent,I want to return order ORD001,REJECTED,Refund initiated for ORD001,2025-12-03T21:49:39.103562
+TEST_006,langgraph_agent,Can I get a refund for order ORD002?,APPROVED,Refund initiated for ORD002,2025-12-03T21:49:52.149307
+TEST_007,langgraph_agent,"I received the wrong product, please refund order ORD003",REJECTED,Refund initiated for ORD003,2025-12-03T21:50:17.171840
+TEST_008,langgraph_agent,"The item in order ORD004 is broken, initiate refund",REJECTED,Refund initiated for ORD004,2025-12-03T21:50:36.650796
+TEST_009,langgraph_agent,"I'm not satisfied with order ORD005, can I return it?",REJECTED,Refund initiated for ORD005,2025-12-03T21:50:50.163550
+TEST_010,langgraph_agent,"I moved, need to update my address for order ORD001",REJECTED,Address updated for customer associated with ORD001,2025-12-03T21:51:02.829472
+TEST_011,langgraph_agent,Can you update my email on file?,REJECTED,Email updated on file,2025-12-03T21:51:20.735460
+TEST_012,langgraph_agent,What's the current address for customer CUST001?,"REJECTED
+
+The response provided does not directly answer the user's question or provide any useful information. It seems to be a comment or an explanation of something that is not directly related to a customer's query or request for assistance with their current address verification issue.",Customer CUST001: Alice | Email: alice@email.com | Address: 123 Main St,2025-12-03T21:51:36.898758
+TEST_013,langgraph_agent,I need to change the delivery address for order ORD002,APPROVED,Delivery address updated for ORD002,2025-12-03T21:51:45.327690
+TEST_014,langgraph_agent,Update my shipping address to 999 New St,APPROVED,Address updated to 999 New St,2025-12-03T21:51:54.199337
+TEST_015,langgraph_agent,Where is order ORD999?,APPROVED,Order ORD999 not found in database.,2025-12-03T21:52:02.660896
+TEST_016,langgraph_agent,Can you check customer CUST999?,REJECTED,Customer CUST999 not found in database.,2025-12-03T21:52:13.988773
+TEST_017,langgraph_agent,I want a refund for order ORD888,REJECTED,Order ORD888 not found in database.,2025-12-03T21:52:26.201998
+TEST_018,langgraph_agent,Check the status of order XYZ123,REJECTED,Order XYZ123 not found in database.,2025-12-03T21:52:38.949564
+TEST_019,langgraph_agent,What's the delivery date for order FAKE001?,REJECTED,Order FAKE001 not found in database.,2025-12-03T21:52:51.314896
+TEST_020,langgraph_agent,My order status is unclear,REJECTED,Please specify order ID for status check,2025-12-03T21:53:05.619081
+TEST_021,langgraph_agent,I've been waiting for 2 months,APPROVED,Order status inquiry requires order ID,2025-12-03T21:53:14.915453
+TEST_022,langgraph_agent,Do you have any orders under alice@email.com?,APPROVED,Not available in current system,2025-12-03T21:53:28.572343
+TEST_023,langgraph_agent,How much was order ORD003?,APPROVED,ORD003: USB Cable ($30.00) is currently delivered.,2025-12-03T21:53:35.443211
+TEST_024,langgraph_agent,When was order ORD001 created?,REJECTED,Order ORD001 created on 2025-11-01,2025-12-03T21:53:56.291496
+TEST_025,langgraph_agent,Check order ORD001 and tell me if I can refund it,REJECTED,ORD001 is shipped; refund can be processed upon request,2025-12-03T21:54:11.535216
+TEST_026,langgraph_agent,What's the status of ORD002 and update my address,REJECTED,ORD002 is processing; address change noted,2025-12-03T21:54:27.842658
+TEST_027,langgraph_agent,Is ORD003 delivered and can I return it?,REJECTED,ORD003 is delivered and eligible for return,2025-12-03T21:54:41.845375
+TEST_028,langgraph_agent,Check customer CUST001 and their orders,APPROVED,Customer CUST001: Alice with associated orders,2025-12-03T21:54:52.958687
+TEST_029,langgraph_agent,Tell me about ORD005 and process a refund,REJECTED,ORD005 is processing; refund initiated,2025-12-03T21:55:05.208008
+TEST_030,langgraph_agent,Where is my order ORD001? (variant 30),APPROVED,ORD001: Laptop Stand ($50.00) is currently shipped.,2025-12-03T21:55:21.737313
+TEST_031,langgraph_agent,Where is my order ORD001? (variant 31),REJECTED,ORD001: Laptop Stand ($50.00) is currently shipped.,2025-12-03T21:55:34.517039
+TEST_032,langgraph_agent,Where is my order ORD001? (variant 32),APPROVED,ORD001: Laptop Stand ($50.00) is currently shipped.,2025-12-03T21:55:43.650558
+TEST_033,langgraph_agent,Where is my order ORD001? (variant 33),REJECTED,ORD001: Laptop Stand ($50.00) is currently shipped.,2025-12-03T21:55:59.614761
+TEST_034,langgraph_agent,Where is my order ORD001? (variant 34),APPROVED,ORD001: Laptop Stand ($50.00) is currently shipped.,2025-12-03T21:56:09.231423
+TEST_035,langgraph_agent,Where is my order ORD001? (variant 35),REJECTED,ORD001: Laptop Stand ($50.00) is currently shipped.,2025-12-03T21:56:23.340500
+TEST_036,langgraph_agent,Where is my order ORD001? (variant 36),APPROVED,ORD001: Laptop Stand ($50.00) is currently shipped.,2025-12-03T21:56:36.243354
+TEST_037,langgraph_agent,Where is my order ORD001? (variant 37),REJECTED,ORD001: Laptop Stand ($50.00) is currently shipped.,2025-12-03T21:56:50.716034
+TEST_038,langgraph_agent,Where is my order ORD001? (variant 38),REJECTED,ORD001: Laptop Stand ($50.00) is currently shipped.,2025-12-03T21:57:06.707485
+TEST_039,langgraph_agent,Where is my order ORD001? (variant 39),Approved.,ORD001: Laptop Stand ($50.00) is currently shipped.,2025-12-03T21:57:14.283435
+TEST_040,langgraph_agent,Where is my order ORD001? (variant 40),REJECTED,ORD001: Laptop Stand ($50.00) is currently shipped.,2025-12-03T21:57:29.018076
+TEST_041,langgraph_agent,Where is my order ORD001? (variant 41),REJECTED,ORD001: Laptop Stand ($50.00) is currently shipped.,2025-12-03T21:57:42.382432
+TEST_042,langgraph_agent,Where is my order ORD001? (variant 42),REJECTED,ORD001: Laptop Stand ($50.00) is currently shipped.,2025-12-03T21:57:54.771342
+TEST_043,langgraph_agent,Where is my order ORD001? (variant 43),REJECTED,ORD001: Laptop Stand ($50.00) is currently shipped.,2025-12-03T21:58:07.610411
+TEST_044,langgraph_agent,Where is my order ORD001? (variant 44),REJECTED,ORD001: Laptop Stand ($50.00) is currently shipped.,2025-12-03T21:58:24.748316
+TEST_045,langgraph_agent,Where is my order ORD001? (variant 45),REJECTED,ORD001: Laptop Stand ($50.00) is currently shipped.,2025-12-03T21:58:37.068070
+TEST_046,langgraph_agent,Where is my order ORD001? (variant 46),APPROVED,ORD001: Laptop Stand ($50.00) is currently shipped.,2025-12-03T21:59:02.815028
+TEST_047,langgraph_agent,Where is my order ORD001? (variant 47),REJECTED,ORD001: Laptop Stand ($50.00) is currently shipped.,2025-12-03T21:59:18.132297
+TEST_048,langgraph_agent,Where is my order ORD001? (variant 48),"REJECTED
+
+The response provided does not address the user's query regarding the status of their specific order. Instead, it suggests reaching out to a different source, which doesn't directly answer the question and might be ineffective if the user already knows where to find this information.
+
+For accurate support, the response should provide detailed instructions on how to check the status of orders within real-time databases or based on customer-specific details like variant 48, ORD001.",ORD001: Laptop Stand ($50.00) is currently shipped.,2025-12-03T21:59:43.865776
+TEST_049,langgraph_agent,Where is my order ORD001? (variant 49),REJECTED,ORD001: Laptop Stand ($50.00) is currently shipped.,2025-12-03T22:00:03.786225

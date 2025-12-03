@@ -1,0 +1,30 @@
+{
+  "timestamp": "2025-12-03T22:17:11.053853",
+  "baseline": {
+    "mean": 0.23,
+    "std": 0.24919871588754228,
+    "n": 50
+  },
+  "agent": {
+    "mean": 0.18658509316770186,
+    "std": 0.3057809120979666,
+    "n": 50
+  },
+  "improvement_percent": -18.87604644882528,
+  "t_test": {
+    "t_statistic": -0.7704232368674665,
+    "p_value": 0.4429022010078548,
+    "significant_at_05": false
+  },
+  "mannwhitney_u_test": {
+    "u_statistic": 1096.0,
+    "p_value": 0.2131249936108508,
+    "significant_at_05": false
+  },
+  "cohens_d": -0.15564899862076437,
+  "effect_size": "Small",
+  "confidence_interval_95": {
+    "lower": -0.15275479098874206,
+    "upper": 0.06592497732414576
+  }
+}
